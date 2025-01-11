@@ -8,6 +8,6 @@ const productSchema = new Schema<CreateProductDto>({
   inStock: { type: Boolean, required: true },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now }
-})
+},{ timestamps: true })
 
 export const ProductModel = model<CreateProductDto>('Product', productSchema)

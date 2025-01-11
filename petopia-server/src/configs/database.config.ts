@@ -1,1 +1,1 @@
-export const { DB_HOST } = process.env;
+export const { DB_HOST, USE_DATABASE } = process.env;

@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid'
 import { ProductRepository } from 'src/products/interfaces/product.repository'
 import { CreateProductDto, UpdateProductDto } from 'src/products/interfaces/product.dto'
 import { FileRepositoryUtils } from 'src/utils/file.util'
@@ -18,7 +17,7 @@ export class ProductRepositoryFile implements ProductRepository {
     const products = this.fileUtils.readData<CreateProductDto & { id: string }>()
     const newProduct = {
       ...data,
-      id: uuidv4(),
+      id: crypto.randomUUID(),
       createdAt: new Date(),
       updatedAt: new Date()
     }

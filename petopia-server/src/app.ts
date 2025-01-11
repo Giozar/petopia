@@ -1,5 +1,5 @@
 import express, { Request, Response, NextFunction, RequestHandler } from 'express';
-import { MongoConnection } from './repositories/mongodb.respository';
+import { productRoutes } from './products/routes/product.routes';
 
 const app = express();
 
@@ -23,10 +23,13 @@ app.use(corsMiddleware);
 // Configura middleware adicional
 app.use(express.json());
 
+app.use('/products', productRoutes)
+
 // Define rutas
 app.get('/', (req: Request, res: Response) => {
     res.send('¡Servidor activo');
 });
+
 
 
 export default app;

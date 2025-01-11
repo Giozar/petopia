@@ -1,17 +1,21 @@
 export interface CreateProductDto {
     name: string
+    description: string
     price: number
     category: string
-    inStock: boolean
+    stock: number
+    species: Array<string>
     createdAt: Date
     updatedAt: Date
   }
   
   export interface UpdateProductDto {
     name?: string
+    description?: string
     price?: number
     category?: string
-    inStock?: boolean
+    stock?: number
+    species?: Array<string>
     updatedAt: Date
   }
   

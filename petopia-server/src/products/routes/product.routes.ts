@@ -1,9 +1,14 @@
 import { Router, Request, Response } from 'express'
 import { ProductService } from '../services/product.service'
 import { ProductRepositoryMongoDB } from '../repository/product.repository.mongodb'
+import { ProductRepositoryFile } from '../repository/product.repository.file'
 
 const productRoutes = Router()
-const productRepository = new ProductRepositoryMongoDB()
+/** Si se usa base de datos, descomentar la línea siguiente*/
+// const productRepository = new ProductRepositoryMongoDB()
+
+const productRepository = new ProductRepositoryFile()
+
 const productService = new ProductService(productRepository)
 
 productRoutes.get('/', async (req: Request, res: Response) => {

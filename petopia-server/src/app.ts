@@ -1,5 +1,6 @@
 import express, { Request, Response, NextFunction, RequestHandler } from 'express';
 import { productRoutes } from './products/routes/product.routes';
+import { userRoutes } from './users/routes/user.routes';
 
 const app = express();
 
@@ -24,6 +25,8 @@ app.use(corsMiddleware);
 app.use(express.json());
 
 app.use('/products', productRoutes)
+
+app.use('/users', userRoutes)
 
 // Define rutas
 app.get('/', (req: Request, res: Response) => {

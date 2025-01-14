@@ -3,6 +3,7 @@ import { productRoutes } from './products/routes/product.routes';
 import { userRoutes } from './users/routes/user.routes';
 import { petRoutes } from './pets/routes/pet.routes';
 import { cartRoutes } from './cart/routes/cart.routes';
+import { appointmentRoutes } from './appointments/routes/appointment.routes';
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use('/products', productRoutes)
 app.use('/users', userRoutes)
 app.use('/pets', petRoutes)
 app.use('/carts', cartRoutes)
+app.use('/appointments', appointmentRoutes)
 
 // Define rutas
 app.get('/', (req: Request, res: Response) => {

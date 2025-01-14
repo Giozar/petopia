@@ -9,6 +9,7 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
+import usePicture from "../pictures/hooks/usePicture";
 
 const useForm = () => {
   const [email, setEmail] = useState("");
@@ -27,6 +28,7 @@ const useForm = () => {
 };
 
 export function Footer1() {
+  const { catImage, dogImage } = usePicture();
   const formState = useForm();
   return (
     <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20">
@@ -35,14 +37,13 @@ export function Footer1() {
           <div className="flex flex-col">
             <a href="#" className="mb-5 md:mb-6">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
-                alt="Logo image"
+                src={dogImage || catImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
+                alt="Logo imagen"
                 className="inline-block"
               />
             </a>
             <p className="mb-5 md:mb-6">
-              Subscribe to our newsletter for the latest updates on products and
-              services.
+              Suscríbete a nuestro boletín para recibir las últimas novedades sobre productos y servicios.
             </p>
             <div className="w-full max-w-md">
               <form
@@ -52,83 +53,82 @@ export function Footer1() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="Your email here"
+                  placeholder="Tu correo aquí"
                   value={formState.email}
                   onChange={formState.handleSetEmail}
                 />
-                <Button title="Subscribe" variant="secondary" size="sm">
-                  Subscribe
+                <Button title="Suscribirse" variant="secondary" size="sm" style={{ backgroundColor: '#6DBF5B' }}>
+                  Suscribirse
                 </Button>
               </form>
               <p className="text-xs">
-                By subscribing, you accept our Privacy Policy and consent to
-                receive updates.
+                Al suscribirte, aceptas nuestra Política de Privacidad y consientes recibir actualizaciones.
               </p>
             </div>
           </div>
           <div className="grid grid-cols-1 items-start gap-y-10 sm:grid-cols-3 sm:gap-x-6 md:gap-x-8 md:gap-y-4">
             <div className="flex flex-col items-start justify-start">
-              <h2 className="mb-3 font-semibold md:mb-4">Quick Links</h2>
+              <h2 className="mb-3 font-semibold md:mb-4">Enlaces Rápidos</h2>
               <ul>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>Shop Now</span>
+                    <span>Compra Ahora</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>Our Services</span>
+                    <span>Nuestros Servicios</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>About Us</span>
+                    <span>Sobre Nosotros</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>Contact Us</span>
+                    <span>Contáctanos</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>FAQs</span>
+                    <span>Preguntas Frecuentes</span>
                   </a>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col items-start justify-start">
-              <h2 className="mb-3 font-semibold md:mb-4">Support Links</h2>
+              <h2 className="mb-3 font-semibold md:mb-4">Enlaces de Soporte</h2>
               <ul>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>Help Center</span>
+                    <span>Centro de Ayuda</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>Pet Care</span>
+                    <span>Cuidado de Mascotas</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>Returns Policy</span>
+                    <span>Política de Devoluciones</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>Shipping Info</span>
+                    <span>Información de Envíos</span>
                   </a>
                 </li>
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
-                    <span>Gift Cards</span>
+                    <span>Tarjetas de Regalo</span>
                   </a>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col items-start justify-start">
-              <h2 className="mb-3 font-semibold md:mb-4">Connect With Us</h2>
+              <h2 className="mb-3 font-semibold md:mb-4">Conéctate con Nosotros</h2>
               <ul className="flex flex-col items-start">
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
@@ -166,16 +166,16 @@ export function Footer1() {
         </div>
         <div className="h-px w-full bg-black" />
         <div className="flex flex-col-reverse items-start justify-between pb-4 pt-6 text-sm md:flex-row md:items-center md:pb-0 md:pt-8">
-          <p className="mt-6 md:mt-0">© 2024 Petopia. All rights reserved.</p>
+          <p className="mt-6 md:mt-0">© 2024 Petopia. Todos los derechos reservados.</p>
           <ul className="grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
             <li className="underline">
-              <a href="#">Privacy Policy</a>
+              <a href="#">Política de Privacidad</a>
             </li>
             <li className="underline">
-              <a href="#">Terms of Service</a>
+              <a href="#">Términos de Servicio</a>
             </li>
             <li className="underline">
-              <a href="#">Cookie Settings</a>
+              <a href="#">Configuración de Cookies</a>
             </li>
           </ul>
         </div>

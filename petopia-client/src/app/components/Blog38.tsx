@@ -1,10 +1,13 @@
-"use client";
+'use client'
 
 import { Button } from "@relume_io/relume-ui";
-import React from "react";
 import { RxChevronRight } from "react-icons/rx";
+import usePicture from "../pictures/hooks/usePicture";
 
 export function Blog38() {
+
+  const { catImage, dogImage } = usePicture();
+
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -12,10 +15,10 @@ export function Blog38() {
           <div className="w-full max-w-lg">
             <p className="mb-3 font-semibold md:mb-4">Blog</p>
             <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Latest Pet Care Insights
+              Últimos Consejos sobre Cuidado de Mascotas
             </h2>
             <p className="md:text-md">
-              Discover tips and tricks for your furry friends.
+              Descubre consejos y trucos para tus amigos peludos.
             </p>
           </div>
         </div>
@@ -23,97 +26,97 @@ export function Blog38() {
           <div className="flex size-full flex-col items-start justify-start text-start">
             <a href="#" className="mb-6 w-full">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                src={dogImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
+                alt="Imagen de perro"
                 className="aspect-[3/2] size-full object-cover"
               />
             </a>
             <div className="rb-4 mb-4 flex w-full items-center justify-start">
               <p className="mr-4 bg-background-secondary px-2 py-1 text-sm font-semibold">
-                Health
+                Salud
               </p>
-              <p className="inline text-sm font-semibold">5 min read</p>
+              <p className="inline text-sm font-semibold">5 min de lectura</p>
             </div>
             <a className="mb-2 flex justify-start text-start" href="#">
               <h2 className="text-xl font-bold md:text-2xl">
-                5 Tips for a Healthy Pet
+                5 Consejos para una Mascota Saludable
               </h2>
             </a>
-            <p>Simple strategies to keep your pet happy and healthy.</p>
+            <p>Estrategias simples para mantener a tu mascota feliz y saludable.</p>
             <Button
-              title="Read more"
+              title="Leer más"
               variant="link"
               size="link"
               iconRight={<RxChevronRight />}
               className="mt-6 flex items-center justify-center gap-x-2"
             >
-              Read more
+              Leer más
             </Button>
           </div>
           <div className="flex size-full flex-col items-start justify-start text-start">
             <a href="#" className="mb-6 w-full">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                src={dogImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
+                alt="Imagen de perro"
                 className="aspect-[3/2] size-full object-cover"
               />
             </a>
             <div className="rb-4 mb-4 flex w-full items-center justify-start">
               <p className="mr-4 bg-background-secondary px-2 py-1 text-sm font-semibold">
-                Toys
+                Juguetes
               </p>
-              <p className="inline text-sm font-semibold">5 min read</p>
+              <p className="inline text-sm font-semibold">5 min de lectura</p>
             </div>
             <a className="mb-2 flex justify-start text-start" href="#">
               <h2 className="text-xl font-bold md:text-2xl">
-                Best Toys for Your Dog
+                Los Mejores Juguetes para tu Perro
               </h2>
             </a>
-            <p>Explore the top toys that will keep your dog entertained.</p>
+            <p>Descubre los mejores juguetes para mantener a tu perro entretenido.</p>
             <Button
-              title="Read more"
+              title="Leer más"
               variant="link"
               size="link"
               iconRight={<RxChevronRight />}
               className="mt-6 flex items-center justify-center gap-x-2"
             >
-              Read more
+              Leer más
             </Button>
           </div>
           <div className="flex size-full flex-col items-start justify-start text-start">
             <a href="#" className="mb-6 w-full">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                src={catImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
+                alt="Imagen de gato"
                 className="aspect-[3/2] size-full object-cover"
               />
             </a>
             <div className="rb-4 mb-4 flex w-full items-center justify-start">
               <p className="mr-4 bg-background-secondary px-2 py-1 text-sm font-semibold">
-                Nutrition
+                Nutrición
               </p>
-              <p className="inline text-sm font-semibold">5 min read</p>
+              <p className="inline text-sm font-semibold">5 min de lectura</p>
             </div>
             <a className="mb-2 flex justify-start text-start" href="#">
               <h2 className="text-xl font-bold md:text-2xl">
-                Essential Foods for Cats
+                Alimentos Esenciales para Gatos
               </h2>
             </a>
-            <p>Learn about the best food options for your feline friend.</p>
+            <p>Conoce las mejores opciones de alimentos para tu amigo felino.</p>
             <Button
-              title="Read more"
+              title="Leer más"
               variant="link"
               size="link"
               iconRight={<RxChevronRight />}
               className="mt-6 flex items-center justify-center gap-x-2"
             >
-              Read more
+              Leer más
             </Button>
           </div>
         </div>
         <div className="flex items-center justify-end">
           <Button variant="secondary" className="mt-10 md:mt-14 lg:mt-16">
-            View all
+            Ver todos
           </Button>
         </div>
       </div>

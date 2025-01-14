@@ -1,6 +1,7 @@
 import express, { Request, Response, NextFunction, RequestHandler } from 'express';
 import { productRoutes } from './products/routes/product.routes';
 import { userRoutes } from './users/routes/user.routes';
+import { petRoutes } from './pets/routes/pet.routes';
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use(express.json());
 app.use('/products', productRoutes)
 
 app.use('/users', userRoutes)
+app.use('/pets', petRoutes)
 
 // Define rutas
 app.get('/', (req: Request, res: Response) => {

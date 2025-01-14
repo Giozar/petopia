@@ -7,20 +7,20 @@ import { Button } from "@relume_io/relume-ui";
 import { ChevronDown, Menu } from 'lucide-react'
 
 const navItems = [
-  { label: 'Home Page', href: '#' },
-  { label: 'Shop Now', href: '#' },
+  { label: 'Home Page', href: '/' },
+  { label: 'Shop Now', href: '/shop' },
   {
     label: 'Our Services',
     href: '#',
     children: [
-      { label: 'Pet Care', href: '#' },
-      { label: 'About Us', href: '#' },
-      { label: 'Contact Us', href: '#' },
+      { label: 'Pet Care', href: '/services/pet-care' },
+      { label: 'About Us', href: '/about-us' },
+      { label: 'Contact Us', href: '/contact' },
     ],
   },
 ]
 
-export function Navbar() {
+export function Navbar3() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
@@ -33,7 +33,7 @@ export function Navbar() {
   return (
     <nav className="border-b border-border bg-background">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <Link href="#" className="flex-shrink-0">
+        <Link href="/" className="flex-shrink-0">
           <img
             src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
             alt="Logo"
@@ -148,7 +148,7 @@ function MobileMenu({
             className="fixed inset-y-0 left-0 z-50 w-64 overflow-y-auto bg-background p-4 shadow-lg"
           >
             <div className="mb-4 flex justify-between">
-              <Link href="#" className="flex-shrink-0">
+              <Link href="/" className="flex-shrink-0">
                 <img
                   src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
                   alt="Logo"

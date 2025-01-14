@@ -5,12 +5,12 @@ import { Footer1 } from './components/Footer1';
 import { Layout249 } from './components/Layout249';
 import { Layout3 } from './components/Layout3';
 import { Layout4 } from './components/Layout4';
-import { Navbar } from './components/Navbar3';
+import { Navbar3 } from './components/Navbar3';
 
 export default function Page() {
   return (
     <main style={{ width: '100%', height: '100vh' }}>
-      <Navbar />
+      <Navbar3 />
       <Header />
       <Layout249 />
       <Layout4 />

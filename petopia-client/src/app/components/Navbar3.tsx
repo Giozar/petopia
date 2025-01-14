@@ -13,7 +13,7 @@ const navItems = [
     label: 'Our Services',
     href: '#',
     children: [
-      { label: 'Pet Care', href: '/services/pet-care' },
+      { label: 'Pet Care', href: '/our-services' },
       { label: 'About Us', href: '/about-us' },
       { label: 'Contact Us', href: '/contact' },
     ],

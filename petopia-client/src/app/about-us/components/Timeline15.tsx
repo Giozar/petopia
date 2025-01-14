@@ -10,10 +10,22 @@ import {
 import React, { useState } from "react";
 import { RxChevronRight } from "react-icons/rx";
 
-const useTabAnimation = ({ tabs }) => {
+interface Tab {
+  value: string;
+  trigger: string;
+  content: {
+    date: string;
+    heading: string;
+    description: string;
+    buttons: { title: string; variant: string; size?: string; iconRight?: JSX.Element }[];
+    image: { src: string; alt: string };
+  };
+}
+
+const useTabAnimation = ({ tabs }: { tabs: Tab[] }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].value);
 
-  const isTabActive = (index) => {
+  const isTabActive = (index: number) => {
     const activeIndex = tabs.findIndex((tab) => tab.value === activeTab);
     return index <= activeIndex;
   };
@@ -23,13 +35,13 @@ const useTabAnimation = ({ tabs }) => {
     return `${(100 / (tabs.length * 2)) * (activeIndex * 2 + 1)}%`;
   };
 
-  const circleClassName = (index) => {
+  const circleClassName = (index: number) => {
     return `z-20 flex size-[0.9375rem] flex-none items-center justify-center rounded-full shadow-[0_0_0_8px_white] transition-colors duration-300 ${
       isTabActive(index) ? "bg-neutral-black" : "bg-neutral-light"
     }`;
   };
 
-  const triggerClassName = (index) => {
+  const triggerClassName = (index: number) => {
     return `relative flex flex-1 flex-col items-center justify-center gap-2 border-0 px-0 transition-colors duration-300 data-[state=active]:bg-transparent ${
       isTabActive(index)
         ? "data-[state=active]:text-text-primary"

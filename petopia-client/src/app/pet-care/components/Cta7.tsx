@@ -10,17 +10,17 @@ export function Cta7() {
         <div className="md:mr-12 lg:mr-0">
           <div className="w-full max-w-lg">
             <h2 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
-              Schedule Your Pet's Appointment Today
+              Programa la cita de tu mascota hoy mismo
             </h2>
             <p className="md:text-md">
-              Contact us for expert pet care and services.
+              Contáctanos para cuidados y servicios expertos para tu mascota.
             </p>
           </div>
         </div>
         <div className="flex items-start justify-start gap-4">
-          <Button title="Book">Book</Button>
-          <Button title="Inquire" variant="secondary">
-            Inquire
+          <Button title="Reservar">Reservar</Button>
+          <Button title="Consultar" variant="secondary">
+            Consultar
           </Button>
         </div>
       </div>

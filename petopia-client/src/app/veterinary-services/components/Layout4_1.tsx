@@ -10,46 +10,42 @@ export function Layout4_1() {
       <div className="container">
         <div className="grid grid-cols-1 gap-y-12 md:grid-flow-row md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <p className="mb-3 font-semibold md:mb-4">Urgent</p>
+            <p className="mb-3 font-semibold md:mb-4">Urgente</p>
             <h1 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Comprehensive Emergency Care for Your Pets
+              Cuidado de Emergencia Integral para Tus Mascotas
             </h1>
             <p className="mb-6 md:mb-8 md:text-md">
-              Our emergency care services are available 24/7, ensuring your pets
-              receive immediate attention when they need it most. Trust our
-              experienced team to provide the highest level of care during
-              urgent medical situations.
+              Nuestros servicios de cuidado de emergencia están disponibles 24/7, asegurando que tus mascotas reciban atención inmediata cuando más lo necesiten. Confía en nuestro equipo experimentado para proporcionar el más alto nivel de cuidado durante situaciones médicas urgentes.
             </p>
             <div className="grid grid-cols-1 gap-6 py-2 sm:grid-cols-2">
               <div>
                 <h6 className="mb-3 text-md font-bold leading-[1.4] md:mb-4 md:text-xl">
-                  Immediate Attention
+                  Atención Inmediata
                 </h6>
                 <p>
-                  Your pets deserve prompt care for any emergency, day or night.
+                  Tus mascotas merecen cuidado rápido para cualquier emergencia, de día o de noche.
                 </p>
               </div>
               <div>
                 <h6 className="mb-3 text-md font-bold leading-[1.4] md:mb-4 md:text-xl">
-                  Always Available
+                  Siempre Disponibles
                 </h6>
                 <p>
-                  Count on us for urgent veterinary services whenever your pet
-                  needs help.
+                  Cuenta con nosotros para servicios veterinarios urgentes siempre que tu mascota lo necesite.
                 </p>
               </div>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-              <Button title="Learn More" variant="secondary">
-                Learn More
+              <Button title="Aprende Más" variant="secondary">
+                Aprende Más
               </Button>
               <Button
-                title="Sign Up"
+                title="Regístrate"
                 variant="link"
                 size="link"
                 iconRight={<RxChevronRight />}
               >
-                Sign Up
+                Regístrate
               </Button>
             </div>
           </div>
@@ -57,7 +53,7 @@ export function Layout4_1() {
             <img
               src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
               className="w-full object-cover"
-              alt="Relume placeholder image"
+              alt="Imagen de placeholder de Relume"
             />
           </div>
         </div>

@@ -10,8 +10,7 @@ export function Layout240() {
       <div className="container">
         <div className="rb-12 mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
           <h2 className="text-4xl font-bold leading-[1.2] md:text-5xl lg:text-6xl">
-            Comprehensive Veterinary Services Tailored for Your Furry Family
-            Members
+            Servicios Veterinarios Integrales Adaptados para Tus Miembros Familiares Peludos
           </h2>
         </div>
         <div className="grid grid-cols-1 items-start justify-center gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
@@ -19,19 +18,18 @@ export function Layout240() {
             <div className="rb-6 mb-6 md:mb-8">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de lugar de Relume"
               />
             </div>
             <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
-              Routine Check-ups to Keep Your Pets Healthy and Happy
+              Chequeos Rutinarios para Mantener a Tus Mascotas Saludables y Felices
             </h3>
             <p>
-              Regular check-ups help detect health issues early, ensuring your
-              pet's well-being.
+              Los chequeos regulares ayudan a detectar problemas de salud a tiempo, asegurando el bienestar de tu mascota.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
               <Button iconRight={<RxChevronRight />} variant="link" size="link">
-                Learn More
+                Aprender Más
               </Button>
             </div>
           </div>
@@ -39,19 +37,18 @@ export function Layout240() {
             <div className="rb-6 mb-6 md:mb-8">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de lugar de Relume"
               />
             </div>
             <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
-              Protect Your Pets with Essential Vaccinations for a Healthier Life
+              Protege a Tus Mascotas con Vacunas Esenciales para una Vida Más Saludable
             </h3>
             <p>
-              Vaccinations are crucial for preventing diseases and keeping your
-              pets safe.
+              Las vacunas son cruciales para prevenir enfermedades y mantener seguras a tus mascotas.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
               <Button iconRight={<RxChevronRight />} variant="link" size="link">
-                Sign Up
+                Registrarse
               </Button>
             </div>
           </div>
@@ -59,20 +56,18 @@ export function Layout240() {
             <div className="rb-6 mb-6 md:mb-8">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de lugar de Relume"
               />
             </div>
             <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
-              Emergency Care Services Available for Your Pets When They Need It
-              Most
+              Servicios de Atención de Emergencia Disponibles para Tus Mascotas Cuando Más lo Necesitan
             </h3>
             <p>
-              Our emergency care team is ready to provide immediate assistance
-              for your pets.
+              Nuestro equipo de cuidados de emergencia está listo para proporcionar asistencia inmediata a tus mascotas.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
               <Button iconRight={<RxChevronRight />} variant="link" size="link">
-                Contact
+                Contacto
               </Button>
             </div>
           </div>
@@ -81,3 +76,4 @@ export function Layout240() {
     </section>
   );
 }
+ 

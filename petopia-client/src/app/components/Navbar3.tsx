@@ -7,16 +7,16 @@ import { Button } from "@relume_io/relume-ui";
 import { ChevronDown, Menu } from 'lucide-react'
 
 const navItems = [
-  { label: 'Home Page', href: '/' },
-  { label: 'Shop Now', href: '/shop' },
+  { label: 'Página Principal', href: '/' },
+  { label: 'Compra Ahora', href: '/shop' },
   {
-    label: 'Our Services',
+    label: 'Nuestros Servicios',
     href: '#',
     children: [
-      { label: 'Veterinary Services', href: '/veterinary-services' },
-      { label: 'Pet Care', href: '/pet-care' },
-      { label: 'About Us', href: '/about-us' },
-      { label: 'Contact Us', href: '/contact' },
+      { label: 'Servicios Veterinarios', href: '/veterinary-services' },
+      { label: 'Cuidado de Mascotas', href: '/pet-care' },
+      { label: 'Sobre Nosotros', href: '/about-us' },
+      { label: 'Contáctanos', href: '/contact' },
     ],
   },
 ]
@@ -47,7 +47,7 @@ export function Navbar3() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Button size="sm">Join</Button>
+          <Button size="sm">Unirse</Button>
           <button
             onClick={toggleMobileMenu}
             className="text-foreground lg:hidden"
@@ -166,7 +166,7 @@ function MobileMenu({
             </div>
             {children}
             <div className="mt-4">
-              <Button className="w-full">Join</Button>
+              <Button className="w-full">Unirse</Button>
             </div>
           </motion.div>
         </>
@@ -174,4 +174,3 @@ function MobileMenu({
     </AnimatePresence>
   )
 }
-

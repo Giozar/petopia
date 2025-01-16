@@ -15,10 +15,10 @@ export function Cta4() {
       <div className="container">
         <div className="w-full max-w-lg">
           <h2 className="mb-5 text-5xl font-bold text-text-alternative md:mb-6 md:text-7xl lg:text-8xl">
-            Stay Updated on Our Products
+            Mantente al Día con Nuestros Productos
           </h2>
           <p className="text-text-alternative md:text-md">
-            Join our newsletter for exclusive updates on new products, special offers, and exciting promotions.
+            Únete a nuestro boletín para recibir actualizaciones exclusivas sobre nuevos productos, ofertas especiales y promociones emocionantes.
           </p>
           <div className="mt-6 w-full max-w-sm md:mt-8">
             <form className="rb-4 mb-4 grid max-w-sm grid-cols-1 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-4">
@@ -27,16 +27,16 @@ export function Cta4() {
                 type="email"
                 value={email}
                 onChange={handleEmailChange}
-                placeholder="Your Email Here"
+                placeholder="Tu Correo Electrónico"
               />
-              <Button title="Join Now">Join Now</Button>
+              <Button title="Unirse Ahora">Unirse Ahora</Button>
             </form>
             <div
               dangerouslySetInnerHTML={{
                 __html: `
                   <p class='text-xs text-text-alternative'>
-                    By clicking Sign Up you're confirming that you agree with our
-                    <a href='#' class='underline'>Terms and Conditions</a>.
+                    Al hacer clic en Unirse estás confirmando que estás de acuerdo con nuestros
+                    <a href='#' class='underline'>Términos y Condiciones</a>.
                   </p>
                 `,
               }}
@@ -47,7 +47,7 @@ export function Cta4() {
           <img
             src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
             className="size-full object-cover"
-            alt="Relume placeholder image"
+            alt="Imagen de marcador de posición de Relume"
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>

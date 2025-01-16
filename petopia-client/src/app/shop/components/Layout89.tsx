@@ -10,29 +10,29 @@ export function Layout89() {
       <div className="container">
         <div className="mb-12 grid grid-cols-1 items-start justify-between gap-x-12 gap-y-5 md:mb-18 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:mb-20 lg:gap-x-20">
           <div>
-            <p className="mb-3 font-semibold md:mb-4">Discover</p>
+            <p className="mb-3 font-semibold md:mb-4">Descubre</p>
             <h3 className="text-5xl font-bold leading-[1.2] md:text-7xl lg:text-8xl">
-              Explore Our Curated Selection of Pet Products
+              Explora Nuestra Selección de Productos para Mascotas
             </h3>
           </div>
           <div>
             <p className="md:text-md">
-              Find everything you need for your beloved pets in one place. From
-              nutritious food to engaging toys, our featured products cater to
-              all your furry friends' needs. Shop now and give your pets the
-              best!
+              Encuentra todo lo que necesitas para tus queridas mascotas en un solo lugar.
+              Desde alimentos nutritivos hasta juguetes interactivos, nuestros productos
+              destacados satisfacen todas las necesidades de tus amigos peludos. ¡Compra
+              ahora y dale lo mejor a tus mascotas!
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-              <Button title="Shop" variant="secondary">
-                Shop
+              <Button title="Comprar" variant="secondary">
+                Comprar
               </Button>
               <Button
-                title="Learn More"
+                title="Saber Más"
                 variant="link"
                 size="link"
                 iconRight={<RxChevronRight />}
               >
-                Learn More
+                Saber Más
               </Button>
             </div>
           </div>
@@ -40,7 +40,7 @@ export function Layout89() {
         <img
           src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
           className="w-full object-cover"
-          alt="Relume placeholder image"
+          alt="Imagen de marcador de posición de Relume"
         />
       </div>
     </section>

@@ -9,12 +9,12 @@ export function Product3() {
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
-            <p className="font-semibold">Shop</p>
+            <p className="font-semibold">Tienda</p>
             <h1 className="mt-3 text-5xl font-bold md:mt-4 md:text-7xl lg:text-8xl">
-              Products
+              Productos
             </h1>
             <p className="mt-5 text-base md:mt-6 md:text-md">
-              Explore our wide range of pet products today!
+              ¡Explora nuestra amplia gama de productos para mascotas hoy!
             </p>
           </div>
         </div>
@@ -23,13 +23,13 @@ export function Product3() {
             <div className="mb-3 aspect-[5/6] md:mb-4">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de marcador de posición de Relume"
                 className="size-full object-cover"
               />
             </div>
             <div className="mb-2">
-              <h3>Dog Food</h3>
-              <div className="text-sm font-normal">Dry</div>
+              <h3>Comida para Perros</h3>
+              <div className="text-sm font-normal">Seca</div>
             </div>
             <div className="text-md md:text-lg">$55</div>
           </a>
@@ -37,13 +37,13 @@ export function Product3() {
             <div className="mb-3 aspect-[5/6] md:mb-4">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de marcador de posición de Relume"
                 className="size-full object-cover"
               />
             </div>
             <div className="mb-2">
-              <h3>Cat Toys</h3>
-              <div className="text-sm font-normal">Interactive</div>
+              <h3>Juguetes para Gatos</h3>
+              <div className="text-sm font-normal">Interactivos</div>
             </div>
             <div className="text-md md:text-lg">$55</div>
           </a>
@@ -51,13 +51,13 @@ export function Product3() {
             <div className="mb-3 aspect-[5/6] md:mb-4">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de marcador de posición de Relume"
                 className="size-full object-cover"
               />
             </div>
             <div className="mb-2">
-              <h3>Dog Collar</h3>
-              <div className="text-sm font-normal">Leather</div>
+              <h3>Collar para Perros</h3>
+              <div className="text-sm font-normal">Cuero</div>
             </div>
             <div className="text-md md:text-lg">$55</div>
           </a>
@@ -65,13 +65,13 @@ export function Product3() {
             <div className="mb-3 aspect-[5/6] md:mb-4">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de marcador de posición de Relume"
                 className="size-full object-cover"
               />
             </div>
             <div className="mb-2">
-              <h3>Cat Bed</h3>
-              <div className="text-sm font-normal">Plush</div>
+              <h3>Cama para Gatos</h3>
+              <div className="text-sm font-normal">Felpa</div>
             </div>
             <div className="text-md md:text-lg">$55</div>
           </a>
@@ -79,13 +79,13 @@ export function Product3() {
             <div className="mb-3 aspect-[5/6] md:mb-4">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de marcador de posición de Relume"
                 className="size-full object-cover"
               />
             </div>
             <div className="mb-2">
-              <h3>Dog Leash</h3>
-              <div className="text-sm font-normal">Reflective</div>
+              <h3>Correa para Perros</h3>
+              <div className="text-sm font-normal">Reflectante</div>
             </div>
             <div className="text-md md:text-lg">$55</div>
           </a>
@@ -93,13 +93,13 @@ export function Product3() {
             <div className="mb-3 aspect-[5/6] md:mb-4">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de marcador de posición de Relume"
                 className="size-full object-cover"
               />
             </div>
             <div className="mb-2">
-              <h3>Cat Carrier</h3>
-              <div className="text-sm font-normal">Portable</div>
+              <h3>Transportador para Gatos</h3>
+              <div className="text-sm font-normal">Portátil</div>
             </div>
             <div className="text-md md:text-lg">$55</div>
           </a>
@@ -107,13 +107,13 @@ export function Product3() {
             <div className="mb-3 aspect-[5/6] md:mb-4">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de marcador de posición de Relume"
                 className="size-full object-cover"
               />
             </div>
             <div className="mb-2">
-              <h3>Dog Bowl</h3>
-              <div className="text-sm font-normal">Stainless</div>
+              <h3>Plato para Perros</h3>
+              <div className="text-sm font-normal">Acero Inoxidable</div>
             </div>
             <div className="text-md md:text-lg">$55</div>
           </a>
@@ -121,20 +121,20 @@ export function Product3() {
             <div className="mb-3 aspect-[5/6] md:mb-4">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de marcador de posición de Relume"
                 className="size-full object-cover"
               />
             </div>
             <div className="mb-2">
-              <h3>Cat Scratcher</h3>
-              <div className="text-sm font-normal">Cardboard</div>
+              <h3>Rascador para Gatos</h3>
+              <div className="text-sm font-normal">Cartón</div>
             </div>
             <div className="text-md md:text-lg">$55</div>
           </a>
         </div>
         <div className="mt-10 flex justify-center md:mt-14 lg:mt-16">
-          <Button variant="secondary" size="primary" title="View all">
-            View all
+          <Button variant="secondary" size="primary" title="Ver todo">
+            Ver todo
           </Button>
         </div>
       </div>

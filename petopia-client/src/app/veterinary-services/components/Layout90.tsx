@@ -8,22 +8,16 @@ export function Layout90() {
       <div className="container">
         <div className="mb-12 grid grid-cols-1 items-start justify-between gap-x-12 gap-y-8 md:mb-18 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:mb-20 lg:gap-x-20">
           <h3 className="text-4xl font-bold leading-[1.2] md:text-5xl lg:text-6xl">
-            Experience Exceptional Veterinary Care Tailored Just for Your
-            Beloved Pets
+            Experimenta Cuidados Veterinarios Excepcionales Personalizados para Tus Mascotas Queridas
           </h3>
           <p className="md:text-md">
-            At our clinic, we prioritize your pet's health with personalized
-            care plans designed to meet their unique needs. Our advanced
-            diagnostic equipment ensures accurate assessments, allowing us to
-            provide the best treatment options. With a compassionate staff
-            dedicated to your pet's well-being, you can trust us to treat your
-            furry family members like our own.
+            En nuestra clínica, priorizamos la salud de tu mascota con planes de cuidado personalizados diseñados para satisfacer sus necesidades únicas. Nuestro equipo de diagnóstico avanzado asegura evaluaciones precisas, permitiéndonos ofrecer las mejores opciones de tratamiento. Con un personal compasivo dedicado al bienestar de tu mascota, puedes confiarnos a tus miembros familiares peludos como si fueran los nuestros.
           </p>
         </div>
         <img
           src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
           className="w-full object-cover"
-          alt="Relume placeholder image"
+          alt="Imagen de lugar de Relume"
         />
       </div>
     </section>

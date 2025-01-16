@@ -1,11 +1,15 @@
 import { UserRepository } from '../interfaces/user.repository'
-import { CreateUserDto, UpdateUserDto } from '../interfaces/user.dto'
+import { CreateUserDto, LoginUserDto, UpdateUserDto } from '../interfaces/user.dto'
 
 export class UserService {
   constructor(private readonly userRepository: UserRepository) {}
 
   createUser(data: CreateUserDto) {
     return this.userRepository.createUser(data)
+  }
+
+  loginUser(data: LoginUserDto){
+    return this.userRepository.loginUser(data);
   }
 
   findAllUsers() {

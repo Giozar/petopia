@@ -8,7 +8,7 @@ export function Header() {
     <section className="relative min-h-screen">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          src="/banner1.webp"
           alt="Fondo Petopia"
           layout="fill"
           objectFit="cover"

@@ -15,77 +15,78 @@ export function Faq2() {
       <div className="container">
         <div className="rb-12 mb-12 w-full max-w-lg md:mb-18 lg:mb-20">
           <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            FAQs
+            Preguntas Frecuentes
           </h2>
           <p className="md:text-md">
-            Here are some common questions about purchasing products, shipping,
-            and returns.
+            Aquí hay algunas preguntas comunes sobre la compra de productos, envíos
+            y devoluciones.
           </p>
         </div>
         <Accordion type="multiple">
           <AccordionItem value="item-0">
             <AccordionTrigger className="md:py-5 md:text-md">
-              What products do you offer?
+              ¿Qué productos ofrecen?
             </AccordionTrigger>
             <AccordionContent className="md:pb-6">
-              We offer a wide range of products for your pets, including food,
-              toys, clothing, and health supplies. Our selection is tailored for
-              both cats and dogs, ensuring you find the perfect items for your
-              furry friends. Browse our categories to discover everything we
-              have available.
+              Ofrecemos una amplia gama de productos para tus mascotas, incluyendo alimentos,
+              juguetes, ropa y suministros de salud. Nuestra selección está diseñada para
+              gatos y perros, asegurando que encuentres los artículos perfectos para tus
+              amigos peludos. Explora nuestras categorías para descubrir todo lo que
+              tenemos disponible.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-1">
             <AccordionTrigger className="md:py-5 md:text-md">
-              How is shipping handled?
+              ¿Cómo se manejan los envíos?
             </AccordionTrigger>
             <AccordionContent className="md:pb-6">
-              Shipping is processed quickly to ensure your products arrive on
-              time. We offer various shipping options, including standard and
-              expedited delivery. You can track your order through our website
-              for added convenience.
+              Los envíos se procesan rápidamente para asegurar que tus productos lleguen a
+              tiempo. Ofrecemos varias opciones de envío, incluyendo entrega estándar y
+              express. Puedes rastrear tu pedido a través de nuestro sitio web para
+              mayor comodidad.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="md:py-5 md:text-md">
-              What is your return policy?
+              ¿Cuál es su política de devoluciones?
             </AccordionTrigger>
             <AccordionContent className="md:pb-6">
-              We want you to be completely satisfied with your purchase. If
-              you're not happy, you can return most products within 30 days for
-              a full refund. Please ensure items are in their original condition
-              for a smooth return process.
+              Queremos que estés completamente satisfecho con tu compra. Si no estás
+              conforme, puedes devolver la mayoría de los productos dentro de los 30 días
+              para un reembolso completo. Por favor, asegúrate de que los artículos estén
+              en su condición original para un proceso de devolución sin problemas.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className="md:py-5 md:text-md">
-              How do I track my order?
+              ¿Cómo puedo rastrear mi pedido?
             </AccordionTrigger>
             <AccordionContent className="md:pb-6">
-              Once your order is shipped, you will receive a tracking number via
-              email. Use this number on our website to check the status of your
-              delivery. Stay updated on your order's journey to your doorstep.
+              Una vez que tu pedido es enviado, recibirás un número de seguimiento por
+              correo electrónico. Usa este número en nuestro sitio web para verificar el
+              estado de tu entrega. Mantente informado sobre el viaje de tu pedido hasta
+              tu puerta.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger className="md:py-5 md:text-md">
-              Can I change my order?
+              ¿Puedo modificar mi pedido?
             </AccordionTrigger>
             <AccordionContent className="md:pb-6">
-              Yes, you can modify your order before it has been processed.
-              Please contact our customer service team as soon as possible. Once
-              the order is shipped, changes cannot be made.
+              Sí, puedes modificar tu pedido antes de que haya sido procesado.
+              Por favor, contacta a nuestro equipo de servicio al cliente lo antes posible.
+              Una vez que el pedido ha sido enviado, no se pueden realizar cambios.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
         <div className="mt-12 md:mt-18 lg:mt-20">
           <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-            Still have questions?
+            ¿Todavía tienes preguntas?
           </h4>
-          <p className="md:text-md">We're here to help!</p>
+          <p className="md:text-md">¡Estamos aquí para ayudarte!</p>
           <div className="mt-6 md:mt-8">
-            <Button title="Contact" variant="secondary">
-              Contact
+            <Button title="Contactar" variant="secondary">
+              Contactar
             </Button>
           </div>
         </div>

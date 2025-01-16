@@ -10,14 +10,12 @@ export function Layout249() {
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="w-full max-w-lg">
-            <p className="mb-3 font-semibold md:mb-4">Services</p>
+            <p className="mb-3 font-semibold md:mb-4">Servicios</p>
             <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Comprehensive Care for Your Beloved Pets
+              Atención Integral para tus Mascotas Queridas
             </h2>
             <p className="md:text-md">
-              Our dedicated team offers a range of services to keep your pets
-              healthy and happy. From routine check-ups to emergency care, we've
-              got you covered.
+              Nuestro equipo dedicado ofrece una variedad de servicios para mantener a tus mascotas saludables y felices. Desde chequeos rutinarios hasta atención de emergencia, te tenemos cubierto.
             </p>
           </div>
         </div>
@@ -26,43 +24,43 @@ export function Layout249() {
             <div className="mb-6 md:mb-8">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de lugar reservado de Relume"
               />
             </div>
             <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
-              Routine Check-ups for Optimal Health
+              Chequeos Rutinarios para una Salud Óptima
             </h3>
-            <p>Regular check-ups ensure your pet stays in top shape.</p>
+            <p>Los chequeos regulares aseguran que tu mascota se mantenga en la mejor forma posible.</p>
           </div>
           <div className="flex w-full flex-col">
             <div className="mb-6 md:mb-8">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de lugar reservado de Relume"
               />
             </div>
             <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
-              Emergency Services When You Need Them Most
+              Servicios de Emergencia Cuando Más los Necesitas
             </h3>
-            <p>Our emergency team is ready 24/7 for urgent care.</p>
+            <p>Nuestro equipo de emergencia está listo 24/7 para cuidado urgente.</p>
           </div>
           <div className="flex w-full flex-col">
             <div className="mb-6 md:mb-8">
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                alt="Imagen de lugar reservado de Relume"
               />
             </div>
             <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
-              Specialized Treatments Tailored to Your Pet
+              Tratamientos Especializados Adaptados a tu Mascota
             </h3>
-            <p>We provide specialized care for unique health needs.</p>
+            <p>Proporcionamos cuidado especializado para necesidades de salud únicas.</p>
           </div>
         </div>
         <div className="mt-10 flex items-center gap-4 md:mt-14 lg:mt-16">
-          <Button variant="secondary">Learn More</Button>
+          <Button variant="secondary">Aprender Más</Button>
           <Button iconRight={<RxChevronRight />} variant="link" size="link">
-            Sign Up
+            Registrarse
           </Button>
         </div>
       </div>

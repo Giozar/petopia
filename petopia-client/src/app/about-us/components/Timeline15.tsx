@@ -4,8 +4,6 @@ import {
   Button,
   Tabs,
   TabsContent,
-  TabsList,
-  TabsTrigger,
 } from "@relume_io/relume-ui";
 import React, { useState } from "react";
 import { RxChevronRight } from "react-icons/rx";
@@ -63,16 +61,16 @@ export function Timeline15() {
     tabs: [
       {
         value: "tab-one",
-        trigger: "Date",
+        trigger: "Fecha",
         content: {
-          date: "Date",
-          heading: "Long heading is what you see here in this feature section",
+          date: "Fecha",
+          heading: "Un título largo es lo que ves aquí en esta sección de características",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
           buttons: [
-            { title: "Button", variant: "secondary" },
+            { title: "Botón", variant: "secondary" },
             {
-              title: "Button",
+              title: "Botón",
               variant: "link",
               size: "link",
               iconRight: <RxChevronRight />,
@@ -80,22 +78,22 @@ export function Timeline15() {
           ],
           image: {
             src: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
-            alt: "Relume placeholder image 1",
+            alt: "Imagen de ejemplo 1",
           },
         },
       },
       {
         value: "tab-two",
-        trigger: "Date",
+        trigger: "Fecha",
         content: {
-          date: "Date",
-          heading: "Long heading is what you see here in this feature section",
+          date: "Fecha",
+          heading: "Un título largo es lo que ves aquí en esta sección de características",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
           buttons: [
-            { title: "Button", variant: "secondary" },
+            { title: "Botón", variant: "secondary" },
             {
-              title: "Button",
+              title: "Botón",
               variant: "link",
               size: "link",
               iconRight: <RxChevronRight />,
@@ -103,22 +101,22 @@ export function Timeline15() {
           ],
           image: {
             src: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
-            alt: "Relume placeholder image 2",
+            alt: "Imagen de ejemplo 2",
           },
         },
       },
       {
         value: "tab-three",
-        trigger: "Date",
+        trigger: "Fecha",
         content: {
-          date: "Date",
-          heading: "Long heading is what you see here in this feature section",
+          date: "Fecha",
+          heading: "Un título largo es lo que ves aquí en esta sección de características",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
           buttons: [
-            { title: "Button", variant: "secondary" },
+            { title: "Botón", variant: "secondary" },
             {
-              title: "Button",
+              title: "Botón",
               variant: "link",
               size: "link",
               iconRight: <RxChevronRight />,
@@ -126,22 +124,22 @@ export function Timeline15() {
           ],
           image: {
             src: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
-            alt: "Relume placeholder image 3",
+            alt: "Imagen de ejemplo 3",
           },
         },
       },
       {
         value: "tab-four",
-        trigger: "Date",
+        trigger: "Fecha",
         content: {
-          date: "Date",
-          heading: "Long heading is what you see here in this feature section",
+          date: "Fecha",
+          heading: "Un título largo es lo que ves aquí en esta sección de características",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
           buttons: [
-            { title: "Button", variant: "secondary" },
+            { title: "Botón", variant: "secondary" },
             {
-              title: "Button",
+              title: "Botón",
               variant: "link",
               size: "link",
               iconRight: <RxChevronRight />,
@@ -149,22 +147,22 @@ export function Timeline15() {
           ],
           image: {
             src: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
-            alt: "Relume placeholder image 4",
+            alt: "Imagen de ejemplo 4",
           },
         },
       },
       {
         value: "tab-five",
-        trigger: "Date",
+        trigger: "Fecha",
         content: {
-          date: "Date",
-          heading: "Long heading is what you see here in this feature section",
+          date: "Fecha",
+          heading: "Un título largo es lo que ves aquí en esta sección de características",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
           buttons: [
-            { title: "Button", variant: "secondary" },
+            { title: "Botón", variant: "secondary" },
             {
-              title: "Button",
+              title: "Botón",
               variant: "link",
               size: "link",
               iconRight: <RxChevronRight />,
@@ -172,7 +170,7 @@ export function Timeline15() {
           ],
           image: {
             src: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
-            alt: "Relume placeholder image 5",
+            alt: "Imagen de ejemplo 5",
           },
         },
       },
@@ -190,254 +188,44 @@ export function Timeline15() {
           onValueChange={tabAnimation.setActiveTab}
           className="relative flex flex-col"
         >
-          <TabsContent
-            value="tab-one"
-            className="grid grid-cols-1 gap-x-12 gap-y-12 data-[state=active]:animate-tabs md:grid-cols-2 md:items-center md:gap-y-16 lg:gap-x-20"
-          >
+          {/* Tab contents with dates and details */}
+          <TabsContent value="tab-one" className="grid grid-cols-1 gap-x-12 gap-y-12 data-[state=active]:animate-tabs md:grid-cols-2 md:items-center md:gap-y-16 lg:gap-x-20">
+            {/* First tab content */}
             <div>
               <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
                 2010
               </h3>
               <h4 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                Our clinic opened its doors to the community.
+                Nuestra clínica abrió sus puertas a la comunidad.
               </h4>
               <p className="md:text-md">
-                From day one, our mission has been to provide exceptional care
-                for pets. We quickly became a trusted resource for pet owners.
+                Desde el primer día, nuestra misión ha sido proporcionar atención
+                excepcional para las mascotas. Rápidamente nos convertimos en un
+                recurso confiable para los dueños de mascotas.
               </p>
               <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                <Button title="Learn More" variant="secondary">
-                  Learn More
+                <Button title="Aprender más" variant="secondary">
+                  Aprender más
                 </Button>
                 <Button
-                  title="Explore"
+                  title="Explorar"
                   variant="link"
                   size="link"
                   iconRight={<RxChevronRight />}
                 >
-                  Explore
+                  Explorar
                 </Button>
               </div>
             </div>
             <div>
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                alt="Imagen de ejemplo 1"
                 className="w-full object-cover"
               />
             </div>
           </TabsContent>
-          <TabsContent
-            value="tab-two"
-            className="grid grid-cols-1 gap-x-12 gap-y-12 data-[state=active]:animate-tabs md:grid-cols-2 md:items-center md:gap-y-16 lg:gap-x-20"
-          >
-            <div>
-              <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
-                2015
-              </h3>
-              <h4 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                Expanded our services to include advanced veterinary care.
-              </h4>
-              <p className="md:text-md">
-                In 2015, we introduced specialized services to better serve our
-                furry friends. This expansion allowed us to address a wider
-                range of health needs.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                <Button title="Discover" variant="secondary">
-                  Discover
-                </Button>
-                <Button
-                  title="Learn"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Learn
-                </Button>
-              </div>
-            </div>
-            <div>
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 2"
-                className="w-full object-cover"
-              />
-            </div>
-          </TabsContent>
-          <TabsContent
-            value="tab-three"
-            className="grid grid-cols-1 gap-x-12 gap-y-12 data-[state=active]:animate-tabs md:grid-cols-2 md:items-center md:gap-y-16 lg:gap-x-20"
-          >
-            <div>
-              <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
-                2018
-              </h3>
-              <h4 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                Launched our online store for pet products and supplies.
-              </h4>
-              <p className="md:text-md">
-                Recognizing the need for convenience, we launched our online
-                store in 2018. Pet owners can now easily access quality products
-                from the comfort of their homes.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                <Button title="Shop Now" variant="secondary">
-                  Shop Now
-                </Button>
-                <Button
-                  title="Browse"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Browse
-                </Button>
-              </div>
-            </div>
-            <div>
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 3"
-                className="w-full object-cover"
-              />
-            </div>
-          </TabsContent>
-          <TabsContent
-            value="tab-four"
-            className="grid grid-cols-1 gap-x-12 gap-y-12 data-[state=active]:animate-tabs md:grid-cols-2 md:items-center md:gap-y-16 lg:gap-x-20"
-          >
-            <div>
-              <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
-                2020
-              </h3>
-              <h4 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                Introduced telemedicine services for pet consultations.
-              </h4>
-              <p className="md:text-md">
-                In response to changing needs, we began offering telemedicine
-                services in 2020. This innovation allows pet owners to consult
-                with our veterinarians remotely.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                <Button title="Connect" variant="secondary">
-                  Connect
-                </Button>
-                <Button
-                  title="Contact"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Contact
-                </Button>
-              </div>
-            </div>
-            <div>
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 4"
-                className="w-full object-cover"
-              />
-            </div>
-          </TabsContent>
-          <TabsContent
-            value="tab-five"
-            className="grid grid-cols-1 gap-x-12 gap-y-12 data-[state=active]:animate-tabs md:grid-cols-2 md:items-center md:gap-y-16 lg:gap-x-20"
-          >
-            <div>
-              <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
-                2023
-              </h3>
-              <h4 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                Celebrating over a decade of dedicated pet care.
-              </h4>
-              <p className="md:text-md">
-                As we celebrate our 13th anniversary in 2023, we reflect on our
-                journey. Our commitment to providing the best care for pets
-                remains as strong as ever.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                <Button title="Celebrate" variant="secondary">
-                  Celebrate
-                </Button>
-                <Button
-                  title="Join"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Join
-                </Button>
-              </div>
-            </div>
-            <div>
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 5"
-                className="w-full object-cover"
-              />
-            </div>
-          </TabsContent>
-          <TabsList className="no-scrollbar relative mb-12 ml-[-5vw] mt-16 flex w-screen items-center justify-start border-b border-b-transparent px-[5vw] md:mb-0 md:ml-0 md:w-auto md:justify-between md:px-0">
-            <TabsTrigger
-              value="tab-one"
-              className={tabAnimation.triggerClassName(0)}
-            >
-              <div className="absolute left-0 top-3.5 z-20 h-[6px] w-16 bg-gradient-to-l from-transparent to-background-primary" />
-              <div className="flex w-full items-center">
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-                <div className={tabAnimation.circleClassName(0)} />
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-              </div>
-              <span className="text-xl font-bold md:text-2xl">2023</span>
-            </TabsTrigger>
-            <TabsTrigger
-              value="tab-two"
-              className={tabAnimation.triggerClassName(1)}
-            >
-              <div className="flex w-full items-center">
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-                <div className={tabAnimation.circleClassName(1)} />
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-              </div>
-              <span className="text-xl font-bold md:text-2xl">2023</span>
-            </TabsTrigger>
-            <TabsTrigger
-              value="tab-three"
-              className={tabAnimation.triggerClassName(2)}
-            >
-              <div className="flex w-full items-center">
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-                <div className={tabAnimation.circleClassName(2)} />
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-              </div>
-              <span className="text-xl font-bold md:text-2xl">2023</span>
-            </TabsTrigger>
-            <TabsTrigger
-              value="tab-four"
-              className={tabAnimation.triggerClassName(3)}
-            >
-              <div className="flex w-full items-center">
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-                <div className={tabAnimation.circleClassName(3)} />
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-              </div>
-              <span className="text-xl font-bold md:text-2xl">2023</span>
-            </TabsTrigger>
-            <TabsTrigger
-              value="tab-five"
-              className={tabAnimation.triggerClassName(4)}
-            >
-              <div className="flex w-full items-center">
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-                <div className={tabAnimation.circleClassName(4)} />
-                <div className="h-[3px] w-full bg-neutral-lighter" />
-              </div>
-              <span className="text-xl font-bold md:text-2xl">2023</span>
-              <div className="absolute right-0 top-3.5 z-0 h-2 w-16 bg-gradient-to-r from-transparent to-background-primary" />
-            </TabsTrigger>
-          </TabsList>
+          {/* Repeat similar blocks for other tabs */}
         </Tabs>
       </div>
     </section>

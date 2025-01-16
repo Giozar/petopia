@@ -60,7 +60,7 @@ export function Testimonial15() {
                   <div className="order-last md:order-first">
                     <img
                       src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Testimonial image 1"
+                      alt="Imagen testimonial 1"
                       className="aspect-square w-full object-cover"
                     />
                   </div>
@@ -73,19 +73,18 @@ export function Testimonial15() {
                       <BiSolidStar className="size-6" />
                     </div>
                     <blockquote className="text-xl font-bold md:text-2xl">
-                      "The care my dog received was exceptional! I couldn't be
-                      happier with the results and the compassionate staff."
+                      "¡La atención que recibió mi perro fue excepcional! No podría estar más feliz con los resultados y el personal compasivo."
                     </blockquote>
                     <div className="mt-6 flex flex-nowrap items-center gap-5 md:mt-8">
                       <div>
                         <p className="font-semibold">Emily Johnson</p>
-                        <p>Pet Owner, N/A</p>
+                        <p>Dueña de mascota, N/A</p>
                       </div>
                       <div className="mx-4 w-px self-stretch bg-background-alternative sm:mx-0" />
                       <div>
                         <img
                           src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
-                          alt="Webflow logo 1"
+                          alt="Logo de Webflow 1"
                           className="max-h-12"
                         />
                       </div>
@@ -98,7 +97,7 @@ export function Testimonial15() {
                   <div className="order-last md:order-first">
                     <img
                       src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Testimonial image 2"
+                      alt="Imagen testimonial 2"
                       className="aspect-square w-full object-cover"
                     />
                   </div>
@@ -111,19 +110,18 @@ export function Testimonial15() {
                       <BiSolidStar className="size-6" />
                     </div>
                     <blockquote className="text-xl font-bold md:text-2xl">
-                      "The care my dog received was exceptional! I couldn't be
-                      happier with the results and the compassionate staff."
+                      "¡La atención que recibió mi perro fue excepcional! No podría estar más feliz con los resultados y el personal compasivo."
                     </blockquote>
                     <div className="mt-6 flex flex-nowrap items-center gap-5 md:mt-8">
                       <div>
                         <p className="font-semibold">Emily Johnson</p>
-                        <p>Pet Owner, N/A</p>
+                        <p>Dueña de mascota, N/A</p>
                       </div>
                       <div className="mx-4 w-px self-stretch bg-background-alternative sm:mx-0" />
                       <div>
                         <img
                           src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
-                          alt="Webflow logo 2"
+                          alt="Logo de Webflow 2"
                           className="max-h-12"
                         />
                       </div>

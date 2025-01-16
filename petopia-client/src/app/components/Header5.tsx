@@ -9,7 +9,7 @@ export function Header() {
       <div className="absolute inset-0 -z-10">
         <Image
           src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-          alt="Petopia background"
+          alt="Fondo Petopia"
           layout="fill"
           objectFit="cover"
           priority
@@ -21,17 +21,17 @@ export function Header() {
         <div className="flex min-h-screen items-center py-16 md:py-24 lg:py-28">
           <div className="max-w-2xl">
             <h1 className="mb-6 text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Welcome to Petopia – Your Pet&apos;s Happy Place
+              Bienvenido a Petopia – El lugar feliz para tu mascota
             </h1>
             <p className="mb-8 text-lg text-white/90 sm:text-xl">
-              At Petopia, we believe every pet deserves the best care and joy.
-              Explore our range of products and services designed to keep your
-              furry friends healthy and happy.
+              En Petopia, creemos que cada mascota merece el mejor cuidado y
+              felicidad. Explora nuestra gama de productos y servicios diseñados
+              para mantener a tus amigos peludos saludables y felices.
             </p>
             <div className="flex flex-wrap gap-4">
-            <Button title="Learn More">Learn More</Button>
-              <Button title="Sign Up" variant="secondary-alt">
-                Sign Up
+              <Button title="Saber más">Saber más</Button>
+              <Button title="Registrarse" variant="secondary-alt">
+                Registrarse
               </Button>
             </div>
           </div>
@@ -40,4 +40,3 @@ export function Header() {
     </section>
   )
 }
-

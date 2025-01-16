@@ -14,29 +14,26 @@ export function Layout22() {
               <img
                 src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
                 className="size-20"
-                alt="Relume logo"
+                alt="Logotipo de Relume"
               />
             </div>
             <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Comprehensive Emergency Services for Your Pets
+              Servicios de Emergencia Integrales para tus Mascotas
             </h2>
             <p className="md:text-md">
-              Our emergency services are available 24/7 to ensure your pets
-              receive immediate care when they need it most. From urgent
-              treatments to emergency surgeries, our skilled team is here to
-              provide the highest level of medical attention.
+              Nuestros servicios de emergencia están disponibles 24/7 para asegurar que tus mascotas reciban atención inmediata cuando más lo necesiten. Desde tratamientos urgentes hasta cirugías de emergencia, nuestro equipo capacitado está aquí para proporcionar el más alto nivel de atención médica.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-              <Button title="Learn More" variant="secondary">
-                Learn More
+              <Button title="Aprender más" variant="secondary">
+                Aprender más
               </Button>
               <Button
-                title="Sign Up"
+                title="Registrarse"
                 variant="link"
                 size="link"
                 iconRight={<RxChevronRight />}
               >
-                Sign Up
+                Registrarse
               </Button>
             </div>
           </div>
@@ -44,7 +41,7 @@ export function Layout22() {
             <img
               src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
               className="w-full object-cover"
-              alt="Relume placeholder image"
+              alt="Imagen de espacio reservado de Relume"
             />
           </div>
         </div>

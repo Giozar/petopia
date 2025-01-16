@@ -10,12 +10,12 @@ export function Contact14() {
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
-          <p className="mb-3 font-semibold md:mb-4">Connect</p>
+          <p className="mb-3 font-semibold md:mb-4">Conectar</p>
           <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            Get in Touch
+            Ponte en Contacto
           </h2>
           <p className="md:text-md">
-            We’re here to assist you with your inquiries.
+            Estamos aquí para ayudarte con tus consultas.
           </p>
         </div>
         <div className="grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-[0.5fr_1fr] md:gap-x-20 md:gap-y-16">
@@ -25,9 +25,9 @@ export function Contact14() {
                 <BiEnvelope className="size-8" />
               </div>
               <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
-                Email
+                Correo Electrónico
               </h3>
-              <p className="mb-2">Reach us anytime.</p>
+              <p className="mb-2">Contáctanos en cualquier momento.</p>
               <a className="underline" href="#">
                 hello@yourvetwebsite.com
               </a>
@@ -37,9 +37,9 @@ export function Contact14() {
                 <BiPhone className="size-8" />
               </div>
               <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
-                Phone
+                Teléfono
               </h3>
-              <p className="mb-2">Call us for assistance.</p>
+              <p className="mb-2">Llámanos para obtener ayuda.</p>
               <a className="underline" href="#">
                 +1 (555) 123-4567
               </a>
@@ -49,17 +49,17 @@ export function Contact14() {
                 <BiMap className="size-8" />
               </div>
               <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
-                Office
+                Oficina
               </h3>
               <p className="mb-2">456 Pet Lane, Sydney NSW 2000 AU</p>
               <div className="mt-5 md:mt-6">
                 <Button
-                  title="Find Us"
+                  title="Encuéntranos"
                   variant="link"
                   size="link"
                   iconRight={<RxChevronRight />}
                 >
-                  Find Us
+                  Encuéntranos
                 </Button>
               </div>
             </div>
@@ -67,7 +67,7 @@ export function Contact14() {
           <a href="#" className="justify-self-end md:w-[321.6px] lg:w-auto">
             <img
               src="https://relume-assets.s3.us-east-1.amazonaws.com/placeholder-map-image.svg"
-              alt="Relume placeholder map image"
+              alt="Imagen de mapa placeholder de Relume"
               className="size-full h-[400px] object-cover md:h-[516px]"
             />
           </a>

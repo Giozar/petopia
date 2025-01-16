@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Button } from "@relume_io/relume-ui";
-import { ChevronDown, Menu } from 'lucide-react'
+import { useState } from 'react';
+import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Button } from '@relume_io/relume-ui';
+import { ChevronDown, Menu } from 'lucide-react';
 
 const navItems = [
   { label: 'Página Principal', href: '/' },
@@ -19,21 +19,20 @@ const navItems = [
       { label: 'Contáctanos', href: '/contact' },
     ],
   },
-]
+];
 
 export function Navbar3() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev)
-
-  const toggleDropdown = (label: string) => {
-    setOpenDropdown((prev) => (prev === label ? null : label))
-  }
+  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+  const toggleDropdown = (label: string) =>
+    setOpenDropdown((prev) => (prev === label ? null : label));
 
   return (
-    <nav className="border-b border-border bg-background">
+    <nav className="relative z-50 border-b border-border bg-background">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
+        {/* Logo */}
         <Link href="/" className="flex-shrink-0">
           <img
             src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
@@ -42,12 +41,16 @@ export function Navbar3() {
           />
         </Link>
 
+        {/* Nav items (desktop) */}
         <div className="hidden lg:flex lg:items-center lg:space-x-8">
           <NavItems desktop />
         </div>
 
+        {/* Right side: "Unirse" button + mobile menu toggle */}
         <div className="flex items-center space-x-4">
-          <Button size="sm">Unirse</Button>
+          <Link href="/login">
+            <Button size="sm">Unirse</Button>
+          </Link>
           <button
             onClick={toggleMobileMenu}
             className="text-foreground lg:hidden"
@@ -58,11 +61,12 @@ export function Navbar3() {
         </div>
       </div>
 
+      {/* Mobile menu */}
       <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu}>
         <NavItems mobile />
       </MobileMenu>
     </nav>
-  )
+  );
 
   function NavItems({ desktop = false, mobile = false }) {
     return navItems.map((item) => (
@@ -116,7 +120,7 @@ export function Navbar3() {
           </Link>
         )}
       </div>
-    ))
+    ));
   }
 }
 
@@ -125,9 +129,9 @@ function MobileMenu({
   onClose,
   children,
 }: {
-  isOpen: boolean
-  onClose: () => void
-  children: React.ReactNode
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
 }) {
   return (
     <AnimatePresence>
@@ -166,11 +170,13 @@ function MobileMenu({
             </div>
             {children}
             <div className="mt-4">
-              <Button className="w-full">Unirse</Button>
+              <Link href="/login">
+                <Button className="w-full">Unirse</Button>
+              </Link>
             </div>
           </motion.div>
         </>
       )}
     </AnimatePresence>
-  )
+  );
 }

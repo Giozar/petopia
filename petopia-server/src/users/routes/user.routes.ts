@@ -5,9 +5,9 @@ import { UserRepositoryMongoDB } from "../repositories/user.repository.mongodb"
 
 const userRoutes = Router()
 
-const userRepository = new UserRepositoryFile()
+// const userRepository = new UserRepositoryFile()
 
-// const userRepository = new UserRepositoryMongoDB()
+const userRepository = new UserRepositoryMongoDB()
 
 const userService = new UserService(userRepository)
 
@@ -18,6 +18,11 @@ userRoutes.get('/', async (req: Request, res: Response) => {
 
 userRoutes.post('/', async (req: Request, res: Response) => {
   const newUser = await userService.createUser(req.body)
+  res.json(newUser)
+})
+
+userRoutes.post('/login', async (req: Request, res: Response) => {
+  const newUser = await userService.loginUser(req.body);
   res.json(newUser)
 })
 

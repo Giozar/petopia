@@ -13,3 +13,8 @@ export interface UpdateUserDto {
   email?: String;
   password?: String;
 }
+
+export interface LoginUserDto {
+  email: String;
+  password: String;
+}

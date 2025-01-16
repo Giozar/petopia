@@ -6,10 +6,12 @@ import { Layout249 } from './components/Layout249';
 import { Layout3 } from './components/Layout3';
 import { Layout4 } from './components/Layout4';
 import { Navbar3 } from './components/Navbar3';
+import RootLayout from './layout';
 
 export default function Page() {
   return (
-    <main style={{ width: '100%', height: '100vh' }}>
+    <RootLayout>
+      <main style={{ width: '100%', height: '100vh' }}>
       <Navbar3 />
       <Header />
       <Layout249 />
@@ -19,5 +21,6 @@ export default function Page() {
       <Blog38 />
       <Footer1 />
     </main>
+    </RootLayout>
   );
 }

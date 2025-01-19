@@ -5,9 +5,10 @@ import { UserRepositoryMongoDB } from "../repositories/user.repository.mongodb"
 
 const userRoutes = Router()
 
-// const userRepository = new UserRepositoryFile()
+const userRepository = new UserRepositoryFile()
 
-const userRepository = new UserRepositoryMongoDB()
+/** Descomenta la siguiente línea para usar la base de datos */
+// const userRepository = new UserRepositoryMongoDB()
 
 const userService = new UserService(userRepository)
 

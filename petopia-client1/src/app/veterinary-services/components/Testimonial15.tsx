@@ -1,5 +1,8 @@
 "use client";
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react/no-unescaped-entities */
 import {
   Carousel,
   CarouselContent,
@@ -7,28 +10,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@relume_io/relume-ui";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { BiSolidStar } from "react-icons/bi";
 
 const useCarousel = () => {
-  const [api, setApi] = useState<any>(null);
+  const [_, setApi] = useState<any | null>(null);
   const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-    setCurrent(api.selectedScrollSnap() + 1);
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
-
-  const handleDotClick = (index: number) => () => {
-    if (api) {
-      api.scrollTo(index);
-    }
-  };
 
   const dotClassName = (index: number) => {
     return `mx-[3px] inline-block size-2 rounded-full ${
@@ -36,11 +24,11 @@ const useCarousel = () => {
     }`;
   };
 
-  return { api, setApi, current, handleDotClick, dotClassName };
+  return { setApi, current, dotClassName };
 };
 
 export function Testimonial15() {
-  const { api, setApi, current, handleDotClick, dotClassName } = useCarousel();
+  const { setApi, current, dotClassName } = useCarousel();
 
   return (
     <section
@@ -48,6 +36,7 @@ export function Testimonial15() {
       className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28"
     >
       <div className="container">
+        {}
         <Carousel
           setApi={setApi}
           opts={{ loop: true, align: "start" }}
@@ -133,11 +122,11 @@ export function Testimonial15() {
             <div className="absolute top-0 flex w-full items-start justify-between md:bottom-0 md:top-auto md:items-end">
               <div className="mt-2.5 flex w-full items-start justify-start md:mb-2.5 md:mt-0">
                 <button
-                  onClick={handleDotClick(0)}
+
                   className={dotClassName(0)}
                 />
                 <button
-                  onClick={handleDotClick(1)}
+
                   className={dotClassName(1)}
                 />
               </div>

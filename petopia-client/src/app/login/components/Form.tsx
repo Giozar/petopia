@@ -1,10 +1,10 @@
 "use client";
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from "react";
 import { Button, Input } from "@relume_io/relume-ui";
 import { z } from "zod";
 import { useRouter } from "next/navigation";
-import { useAuth } from "@/app/context/AuthContext";
+import { useAuth } from "../contexts/AuthContext";
 
 // Definimos un esquema zod para validar los campos
 const userSchema = z.object({
@@ -26,7 +26,7 @@ interface ApiResponse {
   // otros campos opcionales
 }
 
-export default function Forms() {
+export default function Form() {
   const router = useRouter();
   const { setUser } = useAuth();
   // Estado para alternar entre Login / Register

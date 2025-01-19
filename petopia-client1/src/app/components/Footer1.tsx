@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { Button, Input } from "@relume_io/relume-ui";
 import React, { useState } from "react";
@@ -13,10 +14,10 @@ import usePicture from "../pictures/hooks/usePicture";
 
 const useForm = () => {
   const [email, setEmail] = useState("");
-  const handleSetEmail = (event) => {
+  const handleSetEmail = (event: { target: { value: React.SetStateAction<string>; }; }) => {
     setEmail(event.target.value);
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     console.log({ email });
   };

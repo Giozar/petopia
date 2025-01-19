@@ -1,17 +1,20 @@
 "use client";
 
-import { useAuth } from "../login/contexts/AuthContext";
 import { HeaderShop } from "./components/HeaderShop";
 import { Categories } from "./components/FeatureProducts";
+import { ContactShop } from "./components/ContactShop";
+import { CtaBuyShop } from "./components/CtaBuyShop";
+import { CtaSuscribeShop } from "./components/CtaSuscribeShop";
 
 export default function page() {
-    const { user } = useAuth();
   return (
     <>
 
         <HeaderShop />
         <Categories />
-
+        <ContactShop />
+        <CtaBuyShop/>
+        <CtaSuscribeShop/>
     </>
   );
 }

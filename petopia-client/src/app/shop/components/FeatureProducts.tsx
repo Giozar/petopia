@@ -1,10 +1,11 @@
 "use client";
 
 import { Button } from "@relume_io/relume-ui";
+import Image from "next/image";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
 
-export function Categories() {
+export function FeatureProducts() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -28,10 +29,12 @@ export function Categories() {
           <div className="grid grid-cols-1 items-start gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
             <div>
               <div className="rb-5 mb-5 md:mb-6">
-                <img
+                <Image
                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
                   alt="Logo de Relume"
                   className="size-12"
+                  width={100}
+                  height={100}
                 />
               </div>
               <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">

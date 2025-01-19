@@ -1,0 +1,621 @@
+[
+  {
+    "_id": "447431",
+    "name": "Producto 160",
+    "description": "Descripci\u00f3n para Producto 160",
+    "price": 54,
+    "category": "Ropa",
+    "stock": 37,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_2.jpg"
+  },
+  {
+    "_id": "336314",
+    "name": "Producto 543",
+    "description": "Descripci\u00f3n para Producto 543",
+    "price": 14,
+    "category": "Ropa",
+    "stock": 48,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_4.jpg"
+  },
+  {
+    "_id": "106531",
+    "name": "Producto 324",
+    "description": "Descripci\u00f3n para Producto 324",
+    "price": 33,
+    "category": "Medicos",
+    "stock": 48,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_3.jpg"
+  },
+  {
+    "_id": "616042",
+    "name": "Producto 646",
+    "description": "Descripci\u00f3n para Producto 646",
+    "price": 46,
+    "category": "Medicos",
+    "stock": 1,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_5.jpg"
+  },
+  {
+    "_id": "644593",
+    "name": "Producto 273",
+    "description": "Descripci\u00f3n para Producto 273",
+    "price": 39,
+    "category": "Medicos",
+    "stock": 47,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_4.jpg"
+  },
+  {
+    "_id": "954713",
+    "name": "Producto 820",
+    "description": "Descripci\u00f3n para Producto 820",
+    "price": 20,
+    "category": "Accesorios",
+    "stock": 19,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_1.jpg"
+  },
+  {
+    "_id": "674727",
+    "name": "Producto 638",
+    "description": "Descripci\u00f3n para Producto 638",
+    "price": 67,
+    "category": "Juguetes",
+    "stock": 15,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_1.jpg"
+  },
+  {
+    "_id": "589080",
+    "name": "Producto 179",
+    "description": "Descripci\u00f3n para Producto 179",
+    "price": 67,
+    "category": "Juguetes",
+    "stock": 22,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_2.jpg"
+  },
+  {
+    "_id": "539556",
+    "name": "Producto 111",
+    "description": "Descripci\u00f3n para Producto 111",
+    "price": 98,
+    "category": "Medicos",
+    "stock": 16,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_5.jpg"
+  },
+  {
+    "_id": "577307",
+    "name": "Producto 552",
+    "description": "Descripci\u00f3n para Producto 552",
+    "price": 81,
+    "category": "Juguetes",
+    "stock": 42,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_2.jpg"
+  },
+  {
+    "_id": "240546",
+    "name": "Producto 865",
+    "description": "Descripci\u00f3n para Producto 865",
+    "price": 39,
+    "category": "Accesorios",
+    "stock": 6,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_5.jpg"
+  },
+  {
+    "_id": "651998",
+    "name": "Producto 205",
+    "description": "Descripci\u00f3n para Producto 205",
+    "price": 87,
+    "category": "Juguetes",
+    "stock": 21,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_3.jpg"
+  },
+  {
+    "_id": "153145",
+    "name": "Producto 842",
+    "description": "Descripci\u00f3n para Producto 842",
+    "price": 59,
+    "category": "Accesorios",
+    "stock": 12,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_5.jpg"
+  },
+  {
+    "_id": "599188",
+    "name": "Producto 238",
+    "description": "Descripci\u00f3n para Producto 238",
+    "price": 26,
+    "category": "Juguetes",
+    "stock": 29,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_4.jpg"
+  },
+  {
+    "_id": "742135",
+    "name": "Producto 528",
+    "description": "Descripci\u00f3n para Producto 528",
+    "price": 73,
+    "category": "Medicos",
+    "stock": 1,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_1.jpg"
+  },
+  {
+    "_id": "142698",
+    "name": "Producto 491",
+    "description": "Descripci\u00f3n para Producto 491",
+    "price": 52,
+    "category": "Medicos",
+    "stock": 35,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_5.jpg"
+  },
+  {
+    "_id": "746112",
+    "name": "Producto 839",
+    "description": "Descripci\u00f3n para Producto 839",
+    "price": 54,
+    "category": "Medicos",
+    "stock": 35,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_5.jpg"
+  },
+  {
+    "_id": "612522",
+    "name": "Producto 283",
+    "description": "Descripci\u00f3n para Producto 283",
+    "price": 46,
+    "category": "Ropa",
+    "stock": 23,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_3.jpg"
+  },
+  {
+    "_id": "768270",
+    "name": "Producto 552",
+    "description": "Descripci\u00f3n para Producto 552",
+    "price": 54,
+    "category": "Medicos",
+    "stock": 36,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_4.jpg"
+  },
+  {
+    "_id": "249884",
+    "name": "Producto 831",
+    "description": "Descripci\u00f3n para Producto 831",
+    "price": 81,
+    "category": "Accesorios",
+    "stock": 42,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_5.jpg"
+  },
+  {
+    "_id": "254272",
+    "name": "Producto 267",
+    "description": "Descripci\u00f3n para Producto 267",
+    "price": 11,
+    "category": "Ropa",
+    "stock": 39,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_1.jpg"
+  },
+  {
+    "_id": "760166",
+    "name": "Producto 890",
+    "description": "Descripci\u00f3n para Producto 890",
+    "price": 74,
+    "category": "Medicos",
+    "stock": 50,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_3.jpg"
+  },
+  {
+    "_id": "830336",
+    "name": "Producto 378",
+    "description": "Descripci\u00f3n para Producto 378",
+    "price": 23,
+    "category": "Juguetes",
+    "stock": 4,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_4.jpg"
+  },
+  {
+    "_id": "132789",
+    "name": "Producto 75",
+    "description": "Descripci\u00f3n para Producto 75",
+    "price": 11,
+    "category": "Ropa",
+    "stock": 14,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_4.jpg"
+  },
+  {
+    "_id": "360393",
+    "name": "Producto 887",
+    "description": "Descripci\u00f3n para Producto 887",
+    "price": 70,
+    "category": "Medicos",
+    "stock": 26,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_1.jpg"
+  },
+  {
+    "_id": "992234",
+    "name": "Producto 402",
+    "description": "Descripci\u00f3n para Producto 402",
+    "price": 45,
+    "category": "Accesorios",
+    "stock": 49,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_3.jpg"
+  },
+  {
+    "_id": "359262",
+    "name": "Producto 815",
+    "description": "Descripci\u00f3n para Producto 815",
+    "price": 14,
+    "category": "Medicos",
+    "stock": 50,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_2.jpg"
+  },
+  {
+    "_id": "107795",
+    "name": "Producto 755",
+    "description": "Descripci\u00f3n para Producto 755",
+    "price": 18,
+    "category": "Accesorios",
+    "stock": 15,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_5.jpg"
+  },
+  {
+    "_id": "956066",
+    "name": "Producto 632",
+    "description": "Descripci\u00f3n para Producto 632",
+    "price": 56,
+    "category": "Juguetes",
+    "stock": 5,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_5.jpg"
+  },
+  {
+    "_id": "184207",
+    "name": "Producto 190",
+    "description": "Descripci\u00f3n para Producto 190",
+    "price": 93,
+    "category": "Accesorios",
+    "stock": 30,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_4.jpg"
+  },
+  {
+    "_id": "399515",
+    "name": "Producto 349",
+    "description": "Descripci\u00f3n para Producto 349",
+    "price": 46,
+    "category": "Ropa",
+    "stock": 24,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_4.jpg"
+  },
+  {
+    "_id": "678261",
+    "name": "Producto 976",
+    "description": "Descripci\u00f3n para Producto 976",
+    "price": 39,
+    "category": "Accesorios",
+    "stock": 7,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_1.jpg"
+  },
+  {
+    "_id": "418881",
+    "name": "Producto 2",
+    "description": "Descripci\u00f3n para Producto 2",
+    "price": 11,
+    "category": "Medicos",
+    "stock": 39,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_2.jpg"
+  },
+  {
+    "_id": "681076",
+    "name": "Producto 219",
+    "description": "Descripci\u00f3n para Producto 219",
+    "price": 57,
+    "category": "Medicos",
+    "stock": 43,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_3.jpg"
+  },
+  {
+    "_id": "968589",
+    "name": "Producto 706",
+    "description": "Descripci\u00f3n para Producto 706",
+    "price": 91,
+    "category": "Medicos",
+    "stock": 18,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_4.jpg"
+  },
+  {
+    "_id": "725501",
+    "name": "Producto 348",
+    "description": "Descripci\u00f3n para Producto 348",
+    "price": 71,
+    "category": "Ropa",
+    "stock": 15,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_5.jpg"
+  },
+  {
+    "_id": "779260",
+    "name": "Producto 934",
+    "description": "Descripci\u00f3n para Producto 934",
+    "price": 90,
+    "category": "Accesorios",
+    "stock": 20,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_3.jpg"
+  },
+  {
+    "_id": "912659",
+    "name": "Producto 299",
+    "description": "Descripci\u00f3n para Producto 299",
+    "price": 81,
+    "category": "Accesorios",
+    "stock": 28,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_3.jpg"
+  },
+  {
+    "_id": "983816",
+    "name": "Producto 301",
+    "description": "Descripci\u00f3n para Producto 301",
+    "price": 45,
+    "category": "Medicos",
+    "stock": 29,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_3.jpg"
+  },
+  {
+    "_id": "228766",
+    "name": "Producto 219",
+    "description": "Descripci\u00f3n para Producto 219",
+    "price": 47,
+    "category": "Accesorios",
+    "stock": 12,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_3.jpg"
+  },
+  {
+    "_id": "632109",
+    "name": "Producto 986",
+    "description": "Descripci\u00f3n para Producto 986",
+    "price": 79,
+    "category": "Accesorios",
+    "stock": 27,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_1.jpg"
+  },
+  {
+    "_id": "910066",
+    "name": "Producto 284",
+    "description": "Descripci\u00f3n para Producto 284",
+    "price": 42,
+    "category": "Accesorios",
+    "stock": 27,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_2.jpg"
+  },
+  {
+    "_id": "914748",
+    "name": "Producto 451",
+    "description": "Descripci\u00f3n para Producto 451",
+    "price": 63,
+    "category": "Ropa",
+    "stock": 24,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_4.jpg"
+  },
+  {
+    "_id": "479083",
+    "name": "Producto 286",
+    "description": "Descripci\u00f3n para Producto 286",
+    "price": 90,
+    "category": "Juguetes",
+    "stock": 14,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_5.jpg"
+  },
+  {
+    "_id": "314747",
+    "name": "Producto 575",
+    "description": "Descripci\u00f3n para Producto 575",
+    "price": 56,
+    "category": "Accesorios",
+    "stock": 50,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_4.jpg"
+  },
+  {
+    "_id": "571917",
+    "name": "Producto 922",
+    "description": "Descripci\u00f3n para Producto 922",
+    "price": 70,
+    "category": "Medicos",
+    "stock": 8,
+    "species": [
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_5.jpg"
+  },
+  {
+    "_id": "759457",
+    "name": "Producto 505",
+    "description": "Descripci\u00f3n para Producto 505",
+    "price": 74,
+    "category": "Accesorios",
+    "stock": 43,
+    "species": [
+      "Perros",
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/accesorios_4.jpg"
+  },
+  {
+    "_id": "735092",
+    "name": "Producto 164",
+    "description": "Descripci\u00f3n para Producto 164",
+    "price": 20,
+    "category": "Ropa",
+    "stock": 30,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/ropa_2.jpg"
+  },
+  {
+    "_id": "204224",
+    "name": "Producto 999",
+    "description": "Descripci\u00f3n para Producto 999",
+    "price": 22,
+    "category": "Juguetes",
+    "stock": 6,
+    "species": [
+      "Gatos",
+      "Perros"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/juguetes_4.jpg"
+  },
+  {
+    "_id": "502287",
+    "name": "Producto 932",
+    "description": "Descripci\u00f3n para Producto 932",
+    "price": 28,
+    "category": "Medicos",
+    "stock": 48,
+    "species": [
+      "Gatos"
+    ],
+    "image": "https://d22po4pjz3o32e.cloudfront.net/medicos_5.jpg"
+  }
+]

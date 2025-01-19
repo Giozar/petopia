@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@relume_io/relume-ui";
+import Image from "next/image";
 import React from "react";
 
 export function CtaBuyShop() {
@@ -24,10 +25,12 @@ export function CtaBuyShop() {
         </div>
       </div>
       <div className="absolute inset-0 -z-10">
-        <img
+        <Image
           src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
           className="size-full object-cover"
           alt="Imagen de marcador de posición de Relume"
+          width={100}
+          height={100}
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>

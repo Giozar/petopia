@@ -1,6 +1,7 @@
 "use client";
 
 import { Button, Input } from "@relume_io/relume-ui";
+import Image from "next/image";
 import React, { useState } from "react";
 
 export function CtaSuscribeShop() {
@@ -18,7 +19,9 @@ export function CtaSuscribeShop() {
             Mantente al Día con Nuestros Productos
           </h2>
           <p className="text-text-alternative md:text-md">
-            Únete a nuestro boletín para recibir actualizaciones exclusivas sobre nuevos productos, ofertas especiales y promociones emocionantes.
+            Únete a nuestro boletín para recibir actualizaciones exclusivas
+            sobre nuevos productos, ofertas especiales y promociones
+            emocionantes.
           </p>
           <div className="mt-6 w-full max-w-sm md:mt-8">
             <form className="rb-4 mb-4 grid max-w-sm grid-cols-1 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-4">
@@ -44,10 +47,12 @@ export function CtaSuscribeShop() {
           </div>
         </div>
         <div className="absolute inset-0 -z-10">
-          <img
+          <Image
             src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
             className="size-full object-cover"
             alt="Imagen de marcador de posición de Relume"
+            width={100}
+            height={100}
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>

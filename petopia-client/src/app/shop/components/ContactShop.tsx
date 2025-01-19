@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@relume_io/relume-ui";
+import Image from "next/image";
 import React from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { RxChevronRight } from "react-icons/rx";
@@ -65,10 +66,12 @@ export function ContactShop() {
             </div>
           </div>
           <div>
-            <img
+            <Image
               src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
               alt="Imagen de marcador de posición de Relume"
               className="size-full object-cover"
+              width={100}
+              height={100}
             />
           </div>
         </div>

@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colores principales */
+:root {
+    --color-primary: #34568B; /* Azul oscuro */
+    --color-secondary: #88B04B; /* Verde oliva claro */
+    --color-background: #F4F4F4; /* Fondo general gris muy claro */
+    --color-text: #333333; /* Gris oscuro para texto */
+    --color-text-light: #767676; /* Gris más claro para textos menos importantes */
+    --color-text-alternative: #FFFFFF; /* Blanco para textos sobre fondos oscuros */
+    --color-border: #CCCCCC; /* Gris para bordes y divisiones sutiles */
+    --color-error: #E53E3E; /* Rojo para errores */
+    --color-success: #48BB78; /* Verde para éxitos */
+    --color-info: #3182CE; /* Azul para información */
+    --color-warning: #ECC94B; /* Amarillo para advertencias */
+    --color-background-alt: #FFFFFF; /* Blanco para fondos de componentes */
+    --color-background-dark: #2D3748; /* Azul muy oscuro para alternativas de fondo */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+p, li, a, input, button, textarea, select {
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--color-info);
+}
+
+button {
+    background-color: var(--color-secondary);
+    color: var(--color-text-alternative);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #6B8E23; /* Verde oscuro para mayor visibilidad en hover */
+    color: var(--color-text-alternative);
+}
+
+button.secondary {
+    background-color: var(--color-primary);
+}
+
+button.secondary:hover {
+    background-color: #27408B; /* Azul un poco más oscuro para hover */
+    color: var(--color-text-alternative);
+}
+
+
+input, select, textarea {
+    border: 1px solid var(--color-border);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: calc(100% - 16px);
+    background-color: var(--color-background-alt);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-info);
+    outline: none;
+}
+
+/* Clases utilitarias */
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 16px;
+}
+
+.mb-3 {
+    margin-bottom: 24px;
+}
+
+.mb-4 {
+    margin-bottom: 32px;
+}
+
+.mt-2 {
+    margin-top: 16px;
+}
+
+.mt-3 {
+    margin-top: 24px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-full {
+    width: 100%;
+}

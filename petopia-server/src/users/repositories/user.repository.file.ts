@@ -39,31 +39,31 @@ export class UserRepositoryFile implements UserRepository {
 
     // Retornamos el nuevo usuario SIN exponer la contraseña
     const { password, ...rest } = newUser
-    return rest
+    return newUser
   }
 
   /**
    * Inicia sesión validando la contraseña encriptada.
    */
-  async loginUser(data: LoginUserDto): Promise<(CreateUserDto & { id: string }) | null> {
+  async loginUser(data: LoginUserDto): Promise<(CreateUserDto & { id: string })> {
     // Cargamos la lista de usuarios
     const users = this.fileUtils.readData<(CreateUserDto & { id: string; password: string })>()
 
     // Buscamos al usuario por email
     const user = users.find(u => u.email === data.email)
     if (!user) {
-      return null // o lanza una excepción
+      throw new Error('No existe el usuario');
     }
 
     // Comparamos la contraseña encriptada
     const isPasswordValid = await bcrypt.compare(data.password.toString(), user.password.toString())
     if (!isPasswordValid) {
-      return null // o lanza una excepción
+      throw new Error('La contraseña es incorrecta')
     }
 
     // Retornamos el usuario sin el campo password
     const { password, ...rest } = user
-    return rest
+    return user
   }
 
   /**

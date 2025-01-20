@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://www.example.org/contact"
+    name="ContactService"
+    targetNamespace="http://www.example.org/contact">
+
+    <types>
+        <xs:schema targetNamespace="http://www.example.org/contact">
+            <xs:element name="AddContact">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string" />
+                        <xs:element name="mensaje" type="xs:string" />
+                        <xs:element name="telefono" type="xs:string" />
+                        <xs:element name="email" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="AddContactResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="guardadoExitoso" type="xs:boolean" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </types>
+
+    <message name="AddContactRequest">
+        <part name="parameters" element="tns:AddContact" />
+    </message>
+    <message name="AddContactResponse">
+        <part name="parameters" element="tns:AddContactResponse" />
+    </message>
+
+    <portType name="ContactPortType">
+        <operation name="AddContact">
+            <input message="tns:AddContactRequest" />
+            <output message="tns:AddContactResponse" />
+        </operation>
+    </portType>
+
+    <binding name="ContactBinding" type="tns:ContactPortType">
+        <soap12:binding style="rpc" transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" />
+        <operation name="AddContact">
+            <soap12:operation soapAction="http://www.example.org/contact/AddContact" />
+            <input>
+                <soap12:body use="literal" />
+            </input>
+            <output>
+                <soap12:body use="literal" />
+            </output>
+        </operation>
+    </binding>
+
+    <service name="ContactService">
+        <port name="ContactPort" binding="tns:ContactBinding">
+            <soap12:address location="http://localhost:3000/ContactService" />
+        </port>
+    </service>
+</definitions>

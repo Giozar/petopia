@@ -5,6 +5,9 @@ import { MongoConnection } from "./repositories/mongodb.respository";
 
 app.listen(PORT, async () => {
   console.log(`Servidor escuchando en http://localhost:${PORT}`);
+  console.log(`Servidor SOAP escuchando en http://localhost:${PORT}/ContactService`);
+  console.log(`Servidor SOAP escuchando en http://localhost:${PORT}/SuggestionService`);
+    
   const mongoConnection = MongoConnection.getInstance();
 
   // Se valida uso de database

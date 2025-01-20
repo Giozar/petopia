@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://www.example.org/suggestion"
+    name="SuggestionService"
+    targetNamespace="http://www.example.org/suggestion">
+
+    <types>
+        <xs:schema targetNamespace="http://www.example.org/suggestion">
+            <xs:element name="AddSuggestion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mensaje" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="AddSuggestionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="guardadoExitoso" type="xs:boolean" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </types>
+
+    <message name="AddSuggestionRequest">
+        <part name="parameters" element="tns:AddSuggestion" />
+    </message>
+    <message name="AddSuggestionResponse">
+        <part name="parameters" element="tns:AddSuggestionResponse" />
+    </message>
+
+    <portType name="SuggestionPortType">
+        <operation name="AddSuggestion">
+            <input message="tns:AddSuggestionRequest" />
+            <output message="tns:AddSuggestionResponse" />
+        </operation>
+    </portType>
+
+    <binding name="SuggestionBinding" type="tns:SuggestionPortType">
+        <soap12:binding style="rpc" transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" />
+        <operation name="AddSuggestion">
+            <soap12:operation soapAction="http://www.example.org/suggestion/AddSuggestion" />
+            <input>
+                <soap12:body use="literal" />
+            </input>
+            <output>
+                <soap12:body use="literal" />
+            </output>
+        </operation>
+    </binding>
+
+    <service name="SuggestionService">
+        <port name="SuggestionPort" binding="tns:SuggestionBinding">
+            <soap12:address location="http://localhost:3000/SuggestionService" />
+        </port>
+    </service>
+</definitions>

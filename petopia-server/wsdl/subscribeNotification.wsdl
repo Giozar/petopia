@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://www.example.org/notification"
+    name="NotificationService"
+    targetNamespace="http://www.example.org/notification">
+
+    <types>
+        <xs:schema targetNamespace="http://www.example.org/notification">
+            <xs:element name="SubscribeNotification">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="email" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="SubscribeNotificationResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="guardadoExitoso" type="xs:boolean" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </types>
+
+    <message name="SubscribeNotificationRequest">
+        <part name="parameters" element="tns:SubscribeNotification" />
+    </message>
+    <message name="SubscribeNotificationResponse">
+        <part name="parameters" element="tns:SubscribeNotificationResponse" />
+    </message>
+
+    <portType name="NotificationPortType">
+        <operation name="SubscribeNotification">
+            <input message="tns:SubscribeNotificationRequest" />
+            <output message="tns:SubscribeNotificationResponse" />
+        </operation>
+    </portType>
+
+    <binding name="NotificationBinding" type="tns:NotificationPortType">
+        <soap12:binding style="rpc" transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" />
+        <operation name="SubscribeNotification">
+            <soap12:operation soapAction="http://www.example.org/notification/SubscribeNotification" />
+            <input>
+                <soap12:body use="literal" />
+            </input>
+            <output>
+                <soap12:body use="literal" />
+            </output>
+        </operation>
+    </binding>
+
+    <service name="NotificationService">
+        <port name="NotificationPort" binding="tns:NotificationBinding">
+            <soap12:address location="http://localhost:3000/NotificationService" />
+        </port>
+    </service>
+</definitions>

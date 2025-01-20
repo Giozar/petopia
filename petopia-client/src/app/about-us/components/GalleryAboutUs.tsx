@@ -1,6 +1,10 @@
+'use client';
+import usePicture from '@/app/pictures/hooks/usePicture';
 import React from 'react';
 
 export function GalleryAboutUs() {
+  const { catImage, dogImage } = usePicture();
+  
     return (
         <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -13,44 +17,44 @@ export function GalleryAboutUs() {
           </p>
         </div>
         <div className="grid grid-cols-2 items-start justify-center gap-6 md:gap-8 lg:grid-cols-3">
-          <a href="#">
+            <a href="#">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src={dogImage || catImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
               alt="Imagen de ejemplo 1"
-              className="size-full object-cover"
+              className="w-full h-full object-cover"
             />
-          </a>
+            </a>
           <a href="#">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src={dogImage || catImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
               alt="Imagen de ejemplo 2"
               className="size-full object-cover"
             />
           </a>
           <a href="#">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src={dogImage || catImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
               alt="Imagen de ejemplo 3"
               className="size-full object-cover"
             />
           </a>
           <a href="#">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src={dogImage || catImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
               alt="Imagen de ejemplo 4"
               className="size-full object-cover"
             />
           </a>
           <a href="#">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src={dogImage || catImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
               alt="Imagen de ejemplo 5"
               className="size-full object-cover"
             />
           </a>
           <a href="#">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src={dogImage || catImage || "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"}
               alt="Imagen de ejemplo 6"
               className="size-full object-cover"
             />

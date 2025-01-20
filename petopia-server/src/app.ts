@@ -9,6 +9,7 @@ import { cartRoutes } from './cart/routes/cart.routes';
 import { appointmentRoutes } from './appointments/routes/appointment.routes';
 import { soapService } from '../src/contact/soap/contact.controller';
 import { soapServiceSuggestion } from '../src/suggestions/soap/suggestion.controller';
+import { soapNotificationService } from '../src/subscribeNotification/soap/subscribe.controller';
 const app = express();
 
 // Middleware para manejar CORS
@@ -44,6 +45,9 @@ soap.listen(app, '/ContactService', soapService, wsdl);
 const wsdlSuggestion = fs.readFileSync(path.join(__dirname, '../wsdl/suggestionForm.wsdl'), 'utf8');
 soap.listen(app, '/SuggestionService', soapServiceSuggestion, wsdlSuggestion);
 
+const wsdlNotification = fs.readFileSync(path.join(__dirname, '../wsdl/subscribeNotification.wsdl'), 'utf8');
+soap.listen(app, '/NotificationService', soapNotificationService, wsdlNotification);
+
 // Define rutas
 app.get('/', (req: Request, res: Response) => {
     res.send('¡Servidor activo');
@@ -52,6 +56,9 @@ app.get('/ContactService', (req: Request, res: Response) => {
     res.send('¡Servidor activo');
 });
 app.get('/SuggestionService', (req: Request, res: Response) => {
+    res.send('¡Servidor activo');
+});
+app.get('/NotificationService', (req: Request, res: Response) => {
     res.send('¡Servidor activo');
 });
 

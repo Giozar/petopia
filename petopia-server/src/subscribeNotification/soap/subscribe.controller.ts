@@ -6,7 +6,7 @@ const notificationService = new SubscribeNotificationService(
     new SubscribeNotificationRepositoryFile()
 );
 
-export const soapService = {
+export const soapNotificationService = {
     NotificationService: {  // Cambio de ContactService a NotificationService
         NotificationPort: {  // Cambio de ContactPort a NotificationPort
             SubscribeNotification: async function(args: { email: string }) {
